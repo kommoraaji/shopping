@@ -1,0 +1,23 @@
+.main .van-tabs__nav,
+.main .van-tab {
+  border-color: #e4e4e4 !important;
+}
+.main .van-tabs__wrap{
+  height: 1rem !important;
+}
+.main .van-tabs__nav {
+  margin: 0.2rem !important;
+}
+
+.main .van-tab__text {
+  font-size: 0.26rem;
+  color: #333;
+}
+
+.main .van-tab--active {
+  background: #f26b11 !important;
+}
+
+.main .van-tab--active span {
+  color: #fff;
+}

@@ -1,0 +1,51 @@
+{
+  "id": "1937850",
+  "name": "小U商城",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1916339",
+      "name": "测验倒计时图标",
+      "font_class": "ceyandaojishitubiao",
+      "unicode": "e73a",
+      "unicode_decimal": 59194
+    },
+    {
+      "icon_id": "11589108",
+      "name": "下箭头",
+      "font_class": "arrow",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "15855806",
+      "name": "下箭头",
+      "font_class": "arrow-copy",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "3617730",
+      "name": "小折-购物车",
+      "font_class": "gouwuche",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "5910087",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "11188481",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "goods": [{
+    "id": "121",
+    "name": "娅芝贵妇素颜霜 贵妇膏神仙膏补水保湿懒人霜遮瑕珍珠膏",
+    "price": "123",
+    "img1": "../src/assets/images/goods/goodsmian01.jpg",
+    "img2": "../src/assets/images/goods/goodsdetail01.jpg"
+  }]
+}

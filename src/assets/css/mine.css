@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 2.06rem;
+  background: #f26b11;
+  padding: 0 0.22rem;
+  margin-top: 0.9rem;
+}
+
+.van-image {
+  width: 1.52rem;
+  height: 1.52rem;
+  margin: 0.28rem 0.26rem 0.28rem 0.1rem;
+}
+
+.name {
+  flex: 0.9;
+}
+
+.name p {
+  font-size: 0.3rem;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.name span {
+  color: #333;
+  font-size: 0.22rem;
+  font-style: italic;
+}
+
+.signin {
+  border: none;
+  padding: 0.22rem 0.28rem;
+  color: #f26b11;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.nav {
+  margin-bottom: 0.2rem;
+}
+
+.nav ul {
+  width: 100vw;
+  height: 1.42rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.nav .nav-item {
+  text-align: center;
+  width: 1.42rem;
+  padding: 0.2rem 0;
+  font-size: 0.24rem;
+}
+
+.nav-item .van-icon{
+  font-size: 0.36rem;
+}
+
+.main {
+  height: calc(100vh - 4.38rem - 20px) !important;
+  background-color: #fff;
+}
+
+.van-cell {
+  height: 1.12rem;
+  align-items: center;
+  font-size: 0.26rem;
+}
+
+.van-cell .van-icon:nth-of-type(2n-1) {
+  color: #f26b11;
+  font-size: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+.van-cell__value {
+  color: #f26b11;
+}

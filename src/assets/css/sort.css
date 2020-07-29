@@ -1,0 +1,69 @@
+.van-tree-select {
+  margin-top: 0.9rem;
+}
+
+.van-tree-select__nav {
+  text-align: center;
+  background-color: #fff;
+  border-right: 1px solid #d9d9d9;
+}
+
+.van-sidebar {
+  flex: 0.6;
+}
+
+.van-sidebar-item {
+  background-color: #fff;
+}
+
+.van-sidebar-item--select::before {
+  height: 0.4rem;
+  background: #f26b11;
+}
+
+.van-tree-select {
+  height: calc(100vh - 0.9rem) !important;
+}
+
+.stamp {
+  width: 100%;
+  height: auto;
+  clear: both;
+  padding-top: 0.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.tit,
+.title {
+  display: flex;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.14rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  padding-left: 0.55rem;
+}
+
+.more,
+.mored {
+  flex: 1;
+  text-align: right;
+  margin-right: 0.42rem;
+}
+
+.shampoo {
+  width: 1.5rem;
+  float: left;
+  text-align: center;
+  margin: 0 0.16rem;
+}
+
+.shampoo img {
+  width: 1.5rem;
+}
+
+.shampoo p {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.22rem;
+}
