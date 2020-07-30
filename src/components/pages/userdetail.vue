@@ -5,7 +5,6 @@
         <button class="btn" v-show="isShow" @click="goBack">
           <van-icon name="arrow-left" />
         </button>
-        <span class="nav-span">{{this.$route.name}}</span>
         <button class="btn1" @click="showShare = true">
           <van-icon name="ellipsis" />
         </button>
@@ -37,10 +36,10 @@ export default {
     onSelect(option) {
       Toast(option.name);
       this.showShare = false;
-    }
+    },
   },
   mounted() {
-    if (this.$route.name == "购物车") {
+    if (this.$route.name == "购物车" || this.$route.name == "我的订单") {
       this.isShow = false;
     }
   },

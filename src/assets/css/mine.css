@@ -60,7 +60,7 @@ header {
   font-size: 0.24rem;
 }
 
-.nav-item .van-icon{
+.nav-item .van-icon {
   font-size: 0.36rem;
 }
 
@@ -83,4 +83,40 @@ header {
 
 .van-cell__value {
   color: #f26b11;
+}
+
+.box {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.nav-bar {
+  position: relative;
+  width: 100%;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  text-align: center;
+  background: #f26b11;
+}
+
+.nav-bar .btn1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: transparent;
+  border: none;
+  margin: 0.08rem;
+  font-size: 0.36rem;
+  color: #fff;
+  font-size: 0.52rem;
+}
+
+.nav-bar .nav-span {
+  color: #fff;
+  font-size: 0.32rem;
 }

@@ -46,6 +46,10 @@ export default new Router({
       component: () => import('../components/pages/login.vue')
     },
     {
+      path: '/registered',
+      component: () => import('../components/pages/registered.vue')
+    },
+    {
       path: '/order',
       component: () => import('../components/pages/order.vue'),
       name: '确认订单'
@@ -54,6 +58,14 @@ export default new Router({
       path: '/address',
       component: () => import('../components/pages/address.vue'),
       name: '地址管理'
+    },
+    {
+      path: '/userdetail',
+      component: () => import('../components/pages/userdetail.vue')
+    },
+    {
+      path: '/setting',
+      component: () => import('../components/pages/setting.vue')
     },
     {
       path: '*',

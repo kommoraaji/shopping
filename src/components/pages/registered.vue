@@ -1,14 +1,21 @@
 <template>
   <div>
     <div class="main">
-      <van-nav-bar title="登录" left-arrow @click-left="onClickLeft" />
-      <van-form @submit="login">
+      <van-nav-bar title="注册" left-arrow @click-left="$router.back()" />
+      <van-form @submit="registered">
         <van-field
           v-model="user.phone"
-          name="用户名"
-          label="用户名"
-          placeholder="用户名"
-          :rules="[{ required: true, message: '请填写用户名' }]"
+          name="手机号"
+          label="手机号"
+          placeholder="手机号"
+          :rules="[{ required: true, message: '请填写手机号' }]"
+        />
+        <van-field
+          v-model="user.nickname"
+          name="昵称"
+          label="昵称"
+          placeholder="昵称"
+          :rules="[{ required: true, message: '请填写昵称' }]"
         />
         <van-field
           v-model="user.password"
@@ -19,10 +26,10 @@
           :rules="[{ required: true, message: '请填写密码' }]"
         />
         <div style="margin: 16px;">
-          <van-button round block type="info" native-type="submit">登录</van-button>
+          <van-button round block type="info" native-type="submit">注册</van-button>
         </div>
         <div class="text">
-          <p @click="$router.push('/registered')">没有账号？点我注册</p>
+          <p @click="$router.push('/login')">已有账号？点我登录</p>
         </div>
       </van-form>
     </div>
@@ -36,15 +43,13 @@ export default {
       user: {
         phone: "",
         password: "",
+        nickname: "",
       },
     };
   },
   methods: {
-    login(values) {
+    registered(values) {
       console.log("submit", values);
-    },
-    onClickLeft() {
-      this.$router.push("/mine");
     },
   },
   mounted() {},

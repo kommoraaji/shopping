@@ -1,8 +1,15 @@
 <template>
   <div>
-    <v-title></v-title>
+    <div class="box">
+      <div class="nav-bar">
+        <span class="nav-span">{{this.$route.name}}</span>
+        <button class="btn1" @click="tosetting">
+          <van-icon name="setting-o" />
+        </button>
+      </div>
+    </div>
     <header>
-      <van-image round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <van-image @click="userdetail" round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
       <div class="name">
         <p>昵称</p>
         <span>v1</span>
@@ -45,12 +52,17 @@ export default {
       },
     };
   },
+  methods: {
+    userdetail() {
+      this.$router.push("/userdetail");
+    },
+    tosetting() {
+      this.$router.push("./setting");
+    },
+  },
 };
 </script>
 
 <style lang="" scoped>
 @import url("../../assets/css/mine.css");
-.nav-item .van-cell__title{
-  font-size: 60px;
-}
 </style>
