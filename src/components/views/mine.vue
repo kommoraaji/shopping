@@ -9,12 +9,12 @@
       </div>
     </div>
     <header>
-      <van-image @click="userdetail" round class="img" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+      <van-image @click="userdetail" round class="img" :src="require('@/assets/images/mine.jpg')" />
       <div class="name">
         <p>昵称</p>
         <span>v1</span>
       </div>
-      <button class="signin">每日签到</button>
+      <van-button type="default">每日签到</van-button>
     </header>
     <div class="nav">
       <ul>
@@ -33,10 +33,10 @@
       </ul>
     </div>
     <div class="main">
-      <van-cell title="地址管理" icon="location-o" is-link to="/address" />
-      <van-cell title="我的钱包" icon="points" is-link value="内容" />
-      <van-cell title="我的优惠券" icon="coupon-o" is-link />
-      <van-cell title="我的二维码" icon="scan" is-link />
+      <van-cell title="地址管理" to="/address" icon="location-o" is-link />
+      <van-cell title="我的钱包" icon="points" is-link value="200金币" />
+      <van-cell title="我的优惠券" to="/coupon" icon="coupon-o" is-link />
+      <van-cell title="我的二维码" to="/myqr" icon="scan" is-link />
       <van-cell title="我的小伙伴" icon="friends-o" is-link />
     </div>
   </div>

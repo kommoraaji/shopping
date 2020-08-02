@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import "../../assets/js/areaData";
-import areaData from "../../assets/js/areaData";
+import "@/assets/js/areaData";
+import areaData from "@/assets/js/areaData";
 export default {
   data() {
     return {

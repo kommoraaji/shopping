@@ -31,9 +31,10 @@ header {
   font-style: italic;
 }
 
-.signin {
+header .van-button {
+  width: 1.66rem;
+  height: 0.86rem;
   border: none;
-  padding: 0.22rem 0.28rem;
   color: #f26b11;
   background-color: #fff;
   border-radius: 5px;
@@ -113,7 +114,7 @@ header {
   margin: 0.08rem;
   font-size: 0.36rem;
   color: #fff;
-  font-size: 0.52rem;
+  font-size: 0.44rem;
 }
 
 .nav-bar .nav-span {

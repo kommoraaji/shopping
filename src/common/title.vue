@@ -6,7 +6,7 @@
           <van-icon name="arrow-left" />
         </button>
         <span class="nav-span">{{this.$route.name}}</span>
-        <button class="btn1" @click="showShare = true">
+        <button v-show="rightshow" class="btn1" @click="showShare = true">
           <van-icon name="ellipsis" />
         </button>
         <van-share-sheet v-model="showShare" title="立即分享给好友" :options="options" @select="onSelect" />
@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       isShow: true,
+      rightshow: true,
       showShare: false,
       options: [
         { name: "微信", icon: "wechat" },
@@ -37,11 +38,18 @@ export default {
     onSelect(option) {
       Toast(option.name);
       this.showShare = false;
-    }
+    },
   },
   mounted() {
     if (this.$route.name == "购物车") {
       this.isShow = false;
+      this.rightshow = false;
+    }
+    if (this.$route.name == "商品分类") {
+      this.rightshow = false;
+    }
+    if (this.$route.name == "我的优惠券" || this.$route.name == "地址管理") {
+      this.rightshow = false;
     }
   },
 };
@@ -53,7 +61,7 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
 }
 .nav-bar {
   position: relative;

@@ -16,7 +16,13 @@
               />
               <van-stepper v-model="value" min="1" max="5" disable-input />
               <template #right>
-                <van-button square text="删除" type="danger" class="delete-button" />
+                <van-button
+                  square
+                  text="删除"
+                  type="danger"
+                  class="delete-button"
+                  @click="deleteitem"
+                />
               </template>
             </van-swipe-cell>
           </li>
@@ -30,6 +36,7 @@
 </template>
 
 <script>
+import { Dialog } from "vant";
 export default {
   data() {
     return {
@@ -39,6 +46,18 @@ export default {
   },
   methods: {
     onSubmit() {},
+    deleteitem() {
+      Dialog.confirm({
+        title: "标题",
+        message: "确认删除该条数据吗",
+      })
+        .then(() => {
+          // on confirm
+        })
+        .catch(() => {
+          // on cancel
+        });
+    },
   },
 };
 </script>

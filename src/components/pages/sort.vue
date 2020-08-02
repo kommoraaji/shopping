@@ -39,6 +39,7 @@
 export default {
   data() {
     return {
+      isShow: true,
       active: 0,
       items: [
         { text: "施华寇" },
@@ -55,49 +56,49 @@ export default {
         {
           id: 1,
           name: "护亮泽洗发水",
-          img: require("../../assets/images/sp01.jpg"),
+          img: require("@/assets/images/sp01.jpg"),
         },
         {
           id: 2,
           name: "滋养洗发水",
-          img: require("../../assets/images/sp02.jpg"),
+          img: require("@/assets/images/sp02.jpg"),
         },
         {
           id: 3,
           name: "柔顺洗发露",
-          img: require("../../assets/images/sp03.jpg"),
+          img: require("@/assets/images/sp03.jpg"),
         },
         {
           id: 4,
           name: "去屑洗发露",
-          img: require("../../assets/images/sp04.jpg"),
+          img: require("@/assets/images/sp04.jpg"),
         },
         {
           id: 5,
           name: "柔顺洗发露",
-          img: require("../../assets/images/sp05.jpg"),
+          img: require("@/assets/images/sp05.jpg"),
         },
         {
           id: 6,
           name: "焕彩洗发水",
-          img: require("../../assets/images/sp06.jpg"),
+          img: require("@/assets/images/sp06.jpg"),
         },
       ],
       coloring: [
         {
           id: 7,
           name: "施华蔻染色",
-          img: require("../../assets/images/sp07.jpg"),
+          img: require("@/assets/images/sp07.jpg"),
         },
         {
           id: 8,
           name: "施华蔻双氧乳",
-          img: require("../../assets/images/sp08.jpg"),
+          img: require("@/assets/images/sp08.jpg"),
         },
         {
           id: 9,
           name: "施华蔻染发膏",
-          img: require("../../assets/images/sp09.jpg"),
+          img: require("@/assets/images/sp09.jpg"),
         },
       ],
     };

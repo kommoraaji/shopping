@@ -6,7 +6,7 @@
           <van-icon name="arrow-left" />
         </button>
         <span class="nav-span">设置</span>
-        <button class="btn1" @click="showShare = true">
+        <button class="btn1" @click="$router.push('/myqr')">
           <van-icon name="qr" />
         </button>
       </div>
@@ -30,12 +30,14 @@
         <van-cell title="关于小U商城" is-link />
       </van-cell-group>
       <van-button type="default">切换账户</van-button>
-      <van-button type="default" @click="$router.push('/login')">退出登录</van-button>
+      <van-button type="default" to="/login" is-link>退出登录</van-button>
     </div>
   </div>
 </template>
 
 <script>
+import QRCode from "qrcodejs2";
+
 export default {
   data() {
     return {
@@ -47,6 +49,7 @@ export default {
       this.$router.go("-1");
     },
   },
+  mounted() {},
 };
 </script>
 

@@ -2,7 +2,7 @@
   <div>
     <header>
       <div class="header">
-        <img src="../../assets/images/logo.png" alt class="img" />
+        <img src="@/assets/images/logo.png" alt class="img" />
         <input class="input" type="text" placeholder="寻找商品" />
         <span class="point">· · ·</span>
       </div>
@@ -20,19 +20,19 @@
       <div class="nav">
         <ul style="width:100%">
           <li class="title-nav">
-            <img src="../../assets/images/01.jpg" />
+            <img src="@/assets/images/01.jpg" />
             <p>限时抢购</p>
           </li>
           <li class="title-nav">
-            <img src="../../assets/images/02.jpg" />
+            <img src="@/assets/images/02.jpg" />
             <p>积分商城</p>
           </li>
           <li class="title-nav">
-            <img src="../../assets/images/03.jpg" />
+            <img src="@/assets/images/03.jpg" />
             <p>联系我们</p>
           </li>
           <li class="title-nav" @click="goSort">
-            <img src="../../assets/images/04.jpg" />
+            <img src="@/assets/images/04.jpg" />
             <p>商品分类</p>
           </li>
         </ul>
@@ -55,7 +55,7 @@
               <span class="block">{{ timeData.seconds | getTime}}</span>
             </template>
           </van-count-down>
-          <img src="../../assets/images/miaosha.jpg" alt />
+          <img src="@/assets/images/miaosha.jpg" alt />
         </p>
         <img class="adfirst" :src="ad[0].img" alt />
       </div>
@@ -158,7 +158,7 @@
 </template>
 
 <script>
-import "../../assets/css/resetui.css";
+import "@/assets/css/resetui.css";
 export default {
   data() {
     return {
@@ -204,55 +204,55 @@ export default {
       images: [
         {
           id: 101,
-          img: require("../../assets/images/l1.png")
+          img: require("@/assets/images/l1.png")
         },
         {
           id: 102,
-          img: require("../../assets/images/l2.png")
+          img: require("@/assets/images/l2.png")
         },
         {
           id: 103,
-          img: require("../../assets/images/l3.png")
+          img: require("@/assets/images/l3.png")
         },
         {
           id: 104,
-          img: require("../../assets/images/l4.png")
+          img: require("@/assets/images/l4.png")
         }
       ],
       time: 10 * 60 * 60 * 1000,
-      blImg: require("../../assets/images/blImg.jpg"),
+      blImg: require("@/assets/images/blImg.jpg"),
       recommend: [
         {
           id: 121,
-          img: require("../../assets/images/shop1.jpg"),
+          img: require("@/assets/images/shop1.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 122,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 123,
-          img: require("../../assets/images/shop3.jpg"),
+          img: require("@/assets/images/shop3.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 124,
-          img: require("../../assets/images/shop1.jpg"),
+          img: require("@/assets/images/shop1.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 125,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
@@ -261,35 +261,35 @@ export default {
       find: [
         {
           id: 131,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 132,
-          img: require("../../assets/images/shop3.jpg"),
+          img: require("@/assets/images/shop3.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 133,
-          img: require("../../assets/images/shop1.jpg"),
+          img: require("@/assets/images/shop1.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 134,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 135,
-          img: require("../../assets/images/shop3.jpg"),
+          img: require("@/assets/images/shop3.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
@@ -298,35 +298,35 @@ export default {
       session: [
         {
           id: 141,
-          img: require("../../assets/images/shop1.jpg"),
+          img: require("@/assets/images/shop1.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 142,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 143,
-          img: require("../../assets/images/shop3.jpg"),
+          img: require("@/assets/images/shop3.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 144,
-          img: require("../../assets/images/shop1.jpg"),
+          img: require("@/assets/images/shop1.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 145,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
@@ -335,35 +335,35 @@ export default {
       commodity: [
         {
           id: 151,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 152,
-          img: require("../../assets/images/shop3.jpg"),
+          img: require("@/assets/images/shop3.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 153,
-          img: require("../../assets/images/shop1.jpg"),
+          img: require("@/assets/images/shop1.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 154,
-          img: require("../../assets/images/shop2.jpg"),
+          img: require("@/assets/images/shop2.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
         },
         {
           id: 155,
-          img: require("../../assets/images/shop3.jpg"),
+          img: require("@/assets/images/shop3.jpg"),
           title: "雅思兰黛染发膏60ml",
           price: "￥123",
           sold: "800"
@@ -371,16 +371,16 @@ export default {
       ],
       ad: [
         {
-          img: require("../../assets/images/home01.jpg")
+          img: require("@/assets/images/home01.jpg")
         },
         {
-          img: require("../../assets/images/home02.jpg")
+          img: require("@/assets/images/home02.jpg")
         },
         {
-          img: require("../../assets/images/home03.jpg")
+          img: require("@/assets/images/home03.jpg")
         },
         {
-          img: require("../../assets/images/home04.jpg")
+          img: require("@/assets/images/home04.jpg")
         }
       ]
     };

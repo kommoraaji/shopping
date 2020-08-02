@@ -23,6 +23,7 @@ Vue.use(Vant);
 import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload)
 
+//引入axios
 import axios from 'axios'
 Vue.prototype.$axios = axios;
 
